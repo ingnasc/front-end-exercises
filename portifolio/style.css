@@ -13,3 +13,8 @@
  .destaque-titulo {
     color: #22D4FD;
  }
+
+ .apresentacao {
+    display: flex;
+    align-items: center;
+ }
