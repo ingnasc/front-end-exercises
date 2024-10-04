@@ -27,6 +27,7 @@
    font-weight: 600;
    color: #22D4FD;
    cursor: pointer;
+   text-decoration: none;
  }
 
  .destaque-titulo {
