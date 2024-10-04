@@ -62,6 +62,9 @@
 }
 
 .apresentacao__links__botoes {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     border: 2px solid #22D4FD;
     border-radius: 8px;
     width: 378px;
@@ -74,4 +77,10 @@
     text-decoration: none;
     color: #F6F6F6;
     font-size: 24px;
+}
+
+.apresentacao__links__botoes:hover {
+   background-color: #272727;
+   padding: 3%;
+   cursor: pointer;
 }
