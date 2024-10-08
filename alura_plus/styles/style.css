@@ -2,6 +2,7 @@
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
+    --botao-azul-efeito: #67abff;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
 }
@@ -48,11 +49,21 @@ body {
     margin-bottom: 1em;
 }
 
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
 .botao_secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
     font-size: 1rem;
     font-weight: 400;
+}
+
+.botao_secundario:hover {
+    background-color: var(--branco-principal);
+    color: var(--cor-de-fundo);
 }
 
 .container__aviso {
@@ -115,7 +126,7 @@ body {
 .dispositivos__lista {
     display: flex;
     justify-content: center;
-    list-style: none;
+    list-style-type: none;
     margin: 5em 0;
 }
 
@@ -123,4 +134,43 @@ body {
     color: var(--branco-principal);
     font-size: 2rem;
     font-weight: 700;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__logo {
+    margin: 2em 0;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a {
+    color: var(--branco-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: aqua;
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    font-size: 0.87rem;
+    font-weight: 400;
+    margin: 1em 0;
 }
