@@ -103,12 +103,11 @@ body {
 }
 
 .dispositivos {
-    color: var(--branco-principal);
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .dispositivos__titulo {
+    color: var(--branco-principal);
     font-size: 3rem;
     font-weight: 700;
 }
@@ -117,9 +116,11 @@ body {
     display: flex;
     justify-content: center;
     list-style: none;
+    margin: 5em 0;
 }
 
 .lista__item {
-    font-size: 2.37rem;
+    color: var(--branco-principal);
+    font-size: 2rem;
     font-weight: 700;
 }
