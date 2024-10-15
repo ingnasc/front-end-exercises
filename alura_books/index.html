@@ -55,6 +55,9 @@
             <h2 class="carrossel__titulo">Novos lançamentos</h2>
             <!-- Slider main container -->
             <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -65,19 +68,26 @@
                 <div class="swiper-slide"><img src="./assets/Portugol.svg" alt="Livro sobre portugol da alura books"></div>
                 <div class="swiper-slide"><img src="./assets/Acessibilidade.svg" alt="Livro sobre acessibilidade da alura books"></div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
             
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
             </div>
         </section>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+        </script>
 
     </body>
 </html>
